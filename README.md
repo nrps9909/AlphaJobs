@@ -52,11 +52,11 @@
    # .env（本地開發環境變數）
 
    # MongoDB Atlas 連線資訊（請替換為你自己的憑證與叢集資訊）
-   MONGODB_USER=nrps9909
+   MONGODB_USER=YOU
    MONGODB_PASSWORD=YOUR_ATLAS_PASSWORD # << 替換為你的 Atlas 密碼
-   MONGODB_CLUSTER_HOST=alphaloan.8hg5896.mongodb.net # << 你的 Atlas 叢集主機
-   MONGODB_DATABASE=job_portal # 你的資料庫名稱
-   MONGODB_APP_NAME=alphaloan #（可選）你的應用名稱識別
+   MONGODB_CLUSTER_HOST=XXX.NET # << 你的 Atlas 叢集主機
+   MONGODB_DATABASE=DATABASE # 你的資料庫名稱
+   MONGODB_APP_NAME=APPNAME #（可選）你的應用名稱識別
 
    # Rails 開發環境的 SECRET_KEY_BASE
    # 可透過在 backend 目錄執行 `bundle exec rails secret` 產生
@@ -119,10 +119,6 @@
 * **進階搜尋篩選**：加入更多搜尋條件（如地點、薪資區間、公司等）。
 * **UI/UX 優化**：持續改善使用者介面與體驗。
 * **生產環境日誌與監控**：整合專業日誌與效能監控服務。
-
-## 🤝 貢獻
-
-（如你希望他人參與專案，可於此處補上貢獻指南）
 
 ## 📜 授權條款
 
