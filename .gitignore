@@ -1,55 +1,70 @@
-# Dependencies
-node_modules/
-vendor/bundle/
-
-# Production
-dist/
-build/
-tmp/
-
-# Environment
+# Environment Files
+# 絕對不要提交包含敏感憑證的 .env 文件！
 .env
-.env.local
-.env.production
+.env.*
+!.env.example # 如果你提供一個 .env.example 模板文件，不要忽略它
+
+# Dependencies
+frontend/node_modules/
+backend/vendor/bundle/
+backend/.bundle/
+
+# Build artifacts and Distribution
+frontend/dist/
+frontend/build/ # 有些前端框架可能使用 build 而不是 dist
+frontend/.angular/ # Angular CLI cache and temp files
+# 如果後端有 assets precompile 到 public/assets，並且不希望提交
+# backend/public/assets/
+
+# Temporary files and Caches
+backend/tmp/
+frontend/tmp/ # 如果 Angular 或其工具鏈產生 tmp
+# .DS_Store is covered below
 
 # Logs
+backend/log/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# OS
+# OS-generated files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# IDE
-.vscode/
+# IDE and Editor files
 .idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.project
+*.tmproj
+nbproject/
 *.swp
 *.swo
+*~
+*.bak
+*.tmp
 
-# Ruby
-*.gem
-*.rbc
-.bundle/
-.config
-coverage/
-spec/tmp
-*.orig
-rerun.txt
-pickle-email-*.html
+# Ruby & Rails specific
+backend/coverage/
+backend/spec/tmp/
+backend/*.gem
+backend/*.rbc
+backend/.config # Bundler config, .bundle/ 應該已涵蓋
+backend/*.orig
+backend/rerun.txt
+backend/pickle-email-*.html
+backend/.byebug_history
+# backend/db/*.sqlite3 # 如果你確定完全不用 SQLite
+# backend/db/*.sqlite3-journal # 同上
+backend/public/system # Older Active Storage
+backend/public/uploads # Common for CarrierWave etc.
 
-# Rails
-log/
-tmp/
-db/*.sqlite3
-db/*.sqlite3-journal
-public/system
-public/uploads
-public/assets
-.byebug_history
+# IMPORTANT: Rails credentials master key
+backend/config/master.key
 
-# Angular
-.angular/
 *.sh
-all_project_code.txt
