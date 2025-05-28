@@ -6,99 +6,255 @@
       "jobs": [
         {
           "title": "製程工程師",
-          "description": "負責半導體製程開發與優化",
+          "description": "負責半導體製程開發與優化，確保良率與產能。",
           "min_salary": 80000,
           "max_salary": 120000
         },
         {
-          "title": "技術員",
-          "description": "協助製程設備維護與操作",
-          "min_salary": 30000,
-          "max_salary": 36000
-        },
-        {
-          "title": "資深研發工程師",
-          "description": "先進製程技術研發",
-          "min_salary": 120000,
-          "max_salary": 180000
-        },
-        {
-          "title": "品質工程師",
-          "description": "產品品質控管與改善",
-          "min_salary": 70000,
-          "max_salary": 100000
-        },
-        {
-          "title": "AI演算法工程師",
-          "description": "開發製程優化AI模型",
-          "min_salary": 110000,
-          "max_salary": 160000
-        }
-      ]
-    },
-    {
-      "name": "鴻海",
-      "description": "全球最大的電子代工服務公司",
-      "jobs": [
-        {
-          "title": "工廠技術員",
-          "description": "產線設備操作與維護",
-          "min_salary": 28000,
-          "max_salary": 35000
-        },
-        {
-          "title": "專案經理",
-          "description": "管理客戶專案執行",
-          "min_salary": 80000,
-          "max_salary": 120000
-        },
-        {
-          "title": "軟體工程師",
-          "description": "開發自動化系統",
-          "min_salary": 65000,
-          "max_salary": 95000
-        },
-        {
-          "title": "供應鏈管理師",
-          "description": "優化供應鏈流程",
-          "min_salary": 55000,
-          "max_salary": 80000
-        },
-        {
-          "title": "資深機構工程師",
-          "description": "產品機構設計與開發",
-          "min_salary": 105000,
-          "max_salary": 140000
-        }
-      ]
-    },
-    {
-      "name": "聯發科",
-      "description": "全球IC設計領導廠商",
-      "jobs": [
-        {
-          "title": "IC設計工程師",
-          "description": "晶片電路設計與驗證",
-          "min_salary": 90000,
-          "max_salary": 130000
-        },
-        {
-          "title": "韌體工程師",
-          "description": "開發嵌入式系統韌體",
+          "title": "設備工程師",
+          "description": "負責廠房生產設備的維護、保養與故障排除。",
           "min_salary": 75000,
           "max_salary": 110000
         },
         {
-          "title": "演算法工程師",
-          "description": "通訊演算法開發",
-          "min_salary": 100000,
+          "title": "技術員",
+          "description": "協助製程設備維護與操作，執行生產線任務。",
+          "min_salary": 30000,
+          "max_salary": 40000
+        },
+        {
+          "title": "資深研發工程師 (PhD)",
+          "description": "進行先進製程技術研發與導入，發表研究成果。",
+          "min_salary": 120000,
+          "max_salary": 180000
+        },
+        {
+          "title": "品質保證工程師 (QA)",
+          "description": "建立與執行產品品質控管流程，處理客戶品質問題。",
+          "min_salary": 70000,
+          "max_salary": 100000
+        },
+        {
+          "title": "AI演算法工程師 (製程優化)",
+          "description": "開發與應用機器學習模型於製程數據分析與優化。",
+          "min_salary": 110000,
+          "max_salary": 160000
+        },
+        {
+          "title": "廠務工程師",
+          "description": "負責廠房設施、水電氣系統的規劃、運維與節能。",
+          "min_salary": 65000,
+          "max_salary": 95000
+        },
+        {
+          "title": "IT系統工程師",
+          "description": "維護公司內部資訊系統、網絡基礎架構與資訊安全。",
+          "min_salary": 70000,
+          "max_salary": 105000
+        }
+      ]
+    },
+    {
+      "name": "鴻海 (富士康)",
+      "description": "全球最大的電子代工服務 (EMS) 公司",
+      "jobs": [
+        {
+          "title": "工廠生產線技術員",
+          "description": "負責產線設備操作、簡易維護與生產記錄。",
+          "min_salary": 28000,
+          "max_salary": 38000
+        },
+        {
+          "title": "產品專案經理 (PM)",
+          "description": "管理客戶專案從啟動到量產交付的全過程。",
+          "min_salary": 80000,
+          "max_salary": 130000
+        },
+        {
+          "title": "工業工程師 (IE)",
+          "description": "優化生產流程、佈局與作業標準，提升生產效率。",
+          "min_salary": 60000,
+          "max_salary": 90000
+        },
+        {
+          "title": "軟體測試工程師",
+          "description": "負責開發自動化測試腳本，執行產品軟體功能與效能測試。",
+          "min_salary": 65000,
+          "max_salary": 95000
+        },
+        {
+          "title": "供應鏈管理專員",
+          "description": "負責物料採購、庫存管理與供應商協調，優化供應鏈流程。",
+          "min_salary": 55000,
+          "max_salary": 85000
+        },
+        {
+          "title": "資深機構設計工程師",
+          "description": "負責新產品的機構設計、材料選擇與可靠性驗證。",
+          "min_salary": 105000,
           "max_salary": 150000
         },
         {
-          "title": "系統架構師",
-          "description": "晶片系統架構設計",
+          "title": "自動化設備開發工程師",
+          "description": "設計與開發自動化生產設備，導入機器人與智能製造技術。",
+          "min_salary": 75000,
+          "max_salary": 115000
+        },
+        {
+          "title": "數據分析師 (生產)",
+          "description": "收集與分析生產數據，提供改善建議，支持決策制定。",
+          "min_salary": 70000,
+          "max_salary": 100000
+        }
+      ]
+    },
+    {
+      "name": "聯發科 (MediaTek)",
+      "description": "全球領先的無晶圓廠半導體公司，專注於行動裝置、家庭娛樂等晶片設計",
+      "jobs": [
+        {
+          "title": "數位IC設計工程師",
+          "description": "負責晶片數位電路設計 (RTL)、驗證與合成。",
+          "min_salary": 90000,
+          "max_salary": 140000
+        },
+        {
+          "title": "類比IC設計工程師",
+          "description": "負責晶片類比電路、混合信號電路的設計與佈局。",
+          "min_salary": 95000,
+          "max_salary": 150000
+        },
+        {
+          "title": "韌體工程師 (Embedded Linux)",
+          "description": "開發與維護基於 Linux 的嵌入式系統韌體與驅動程式。",
+          "min_salary": 75000,
+          "max_salary": 120000
+        },
+        {
+          "title": "通訊演算法工程師 (5G/Wi-Fi)",
+          "description": "研發與實現 5G、Wi-Fi 等無線通訊標準的物理層/MAC層演算法。",
+          "min_salary": 100000,
+          "max_salary": 160000
+        },
+        {
+          "title": "系統單晶片 (SoC) 架構師",
+          "description": "定義與設計複雜 SoC 的整體架構、IP選擇與效能分析。",
           "min_salary": 130000,
-          "max_salary": 200000
+          "max_salary": 220000
+        },
+        {
+          "title": "多媒體演算法工程師 (影像/音訊)",
+          "description": "開發影像處理、音訊編解碼等相關演算法並整合至晶片。",
+          "min_salary": 95000,
+          "max_salary": 150000
+        },
+        {
+          "title": "IC驗證工程師",
+          "description": "建立驗證平台，撰寫測試案例，確保晶片功能正確性。",
+          "min_salary": 85000,
+          "max_salary": 130000
+        },
+        {
+          "title": "技術市場工程師 (FAE)",
+          "description": "提供客戶技術支援，解決產品應用問題，收集市場需求。",
+          "min_salary": 80000,
+          "max_salary": 120000
+        }
+      ]
+    },
+    {
+      "name": "Google 台灣",
+      "description": "全球領先的科技公司，在台灣設有重要的研發與營運中心",
+      "jobs": [
+        {
+          "title": "軟體工程師 (Software Engineer, Backend)",
+          "description": "設計、開發與維護大規模後端系統與服務。",
+          "min_salary": 120000,
+          "max_salary": 250000
+        },
+        {
+          "title": "軟體工程師 (Software Engineer, Frontend)",
+          "description": "使用現代前端框架 (如 Angular, React, Vue) 開發用戶界面。",
+          "min_salary": 110000,
+          "max_salary": 220000
+        },
+        {
+          "title": "機器學習工程師 (Machine Learning Engineer)",
+          "description": "研究、開發與部署機器學習模型於 Google 各項產品。",
+          "min_salary": 130000,
+          "max_salary": 280000
+        },
+        {
+          "title": "產品經理 (Product Manager)",
+          "description": "定義產品願景、策略與路線圖，協調跨部門團隊執行。",
+          "min_salary": 150000,
+          "max_salary": 300000
+        },
+        {
+          "title": "使用者體驗設計師 (UX Designer)",
+          "description": "進行使用者研究，設計直觀易用的產品交互流程與界面。",
+          "min_salary": 90000,
+          "max_salary": 180000
+        },
+        {
+          "title": "網站可靠性工程師 (Site Reliability Engineer, SRE)",
+          "description": "確保 Google 服務的高可用性、效能與可擴展性。",
+          "min_salary": 140000,
+          "max_salary": 270000
+        },
+        {
+          "title": "數據科學家 (Data Scientist)",
+          "description": "分析海量數據，提取洞見，建立預測模型支持業務決策。",
+          "min_salary": 120000,
+          "max_salary": 240000
+        }
+      ]
+    },
+    {
+      "name": "蝦皮購物 (Shopee Taiwan)",
+      "description": "東南亞與台灣領先的電子商務平台",
+      "jobs": [
+        {
+          "title": "後端工程師 (Golang/Python/Java)",
+          "description": "開發與維護電商平台核心後端服務，處理高併發請求。",
+          "min_salary": 80000,
+          "max_salary": 150000
+        },
+        {
+          "title": "前端工程師 (Vue.js)",
+          "description": "負責電商網站與 App 的前端界面開發與優化。",
+          "min_salary": 70000,
+          "max_salary": 130000
+        },
+        {
+          "title": "Android/iOS App 開發工程師",
+          "description": "開發與維護蝦皮購物行動應用程式。",
+          "min_salary": 75000,
+          "max_salary": 140000
+        },
+        {
+          "title": "數據工程師 (Data Engineer)",
+          "description": "建立與維護數據管道 (ETL)，處理與儲存海量用戶數據。",
+          "min_salary": 90000,
+          "max_salary": 160000
+        },
+        {
+          "title": "營運專員 (Operations Specialist)",
+          "description": "負責平台日常營運、活動策劃與商家關係維護。",
+          "min_salary": 45000,
+          "max_salary": 70000
+        },
+        {
+          "title": "數位行銷專員",
+          "description": "策劃與執行數位廣告投放、社群媒體行銷與內容行銷。",
+          "min_salary": 50000,
+          "max_salary": 80000
+        },
+        {
+          "title": "DevOps 工程師",
+          "description": "負責 CI/CD 流程建置、自動化維運與雲端資源管理。",
+          "min_salary": 85000,
+          "max_salary": 150000
         }
       ]
     }
