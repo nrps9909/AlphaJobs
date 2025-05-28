@@ -1,261 +1,139 @@
 {
   "companies": [
     {
-      "name": "台積電",
-      "description": "全球領先的半導體製造公司",
+      "name": "台積電 (TSMC)",
+      "description": "全球領先的半導體製造公司，專注於晶圓代工服務。",
       "jobs": [
-        {
-          "title": "製程工程師",
-          "description": "負責半導體製程開發與優化，確保良率與產能。",
-          "min_salary": 80000,
-          "max_salary": 120000
-        },
-        {
-          "title": "設備工程師",
-          "description": "負責廠房生產設備的維護、保養與故障排除。",
-          "min_salary": 75000,
-          "max_salary": 110000
-        },
-        {
-          "title": "技術員",
-          "description": "協助製程設備維護與操作，執行生產線任務。",
-          "min_salary": 30000,
-          "max_salary": 40000
-        },
-        {
-          "title": "資深研發工程師 (PhD)",
-          "description": "進行先進製程技術研發與導入，發表研究成果。",
-          "min_salary": 120000,
-          "max_salary": 180000
-        },
-        {
-          "title": "品質保證工程師 (QA)",
-          "description": "建立與執行產品品質控管流程，處理客戶品質問題。",
-          "min_salary": 70000,
-          "max_salary": 100000
-        },
-        {
-          "title": "AI演算法工程師 (製程優化)",
-          "description": "開發與應用機器學習模型於製程數據分析與優化。",
-          "min_salary": 110000,
-          "max_salary": 160000
-        },
-        {
-          "title": "廠務工程師",
-          "description": "負責廠房設施、水電氣系統的規劃、運維與節能。",
-          "min_salary": 65000,
-          "max_salary": 95000
-        },
-        {
-          "title": "IT系統工程師",
-          "description": "維護公司內部資訊系統、網絡基礎架構與資訊安全。",
-          "min_salary": 70000,
-          "max_salary": 105000
-        }
+        { "title": "製程工程師", "description": "負責半導體製程開發、監控與良率優化。", "min_salary": 80000, "max_salary": 125000 },
+        { "title": "設備工程師", "description": "維護、保養及改善先進製程設備，確保設備穩定運作。", "min_salary": 75000, "max_salary": 115000 },
+        { "title": "製程整合工程師", "description": "協調不同製程模塊，解決整合問題，提升產品整體表現。", "min_salary": 85000, "max_salary": 130000 },
+        { "title": "技術員 (生產線)", "description": "協助工程師執行設備操作、參數調整與日常點檢。", "min_salary": 32000, "max_salary": 45000 },
+        { "title": "資深研發工程師 (材料科學)", "description": "研究新型半導體材料特性，導入先進製程應用。", "min_salary": 120000, "max_salary": 190000 },
+        { "title": "品質保證工程師 (QA)", "description": "建立品質管理系統，執行產品可靠性測試與異常分析。", "min_salary": 70000, "max_salary": 105000 },
+        { "title": "AI演算法工程師 (智能製造)", "description": "開發機器學習模型，應用於缺陷檢測、預測性維護等智能製造場景。", "min_salary": 110000, "max_salary": 170000 },
+        { "title": "廠務工程師 (水氣化)", "description": "負責廠區超純水、特殊氣體、化學品供應系統的運維管理。", "min_salary": 65000, "max_salary": 100000 },
+        { "title": "IT系統架構師", "description": "規劃與設計公司級資訊系統架構，支持全球營運需求。", "min_salary": 100000, "max_salary": 160000 },
+        { "title": "供應鏈管理師 (物料規劃)", "description": "負責關鍵原物料的需求預測、採購規劃與庫存優化。", "min_salary": 70000, "max_salary": 110000 }
       ]
     },
     {
       "name": "鴻海 (富士康)",
-      "description": "全球最大的電子代工服務 (EMS) 公司",
+      "description": "全球最大的電子產品專業製造服務 (EMS) 供應商。",
       "jobs": [
-        {
-          "title": "工廠生產線技術員",
-          "description": "負責產線設備操作、簡易維護與生產記錄。",
-          "min_salary": 28000,
-          "max_salary": 38000
-        },
-        {
-          "title": "產品專案經理 (PM)",
-          "description": "管理客戶專案從啟動到量產交付的全過程。",
-          "min_salary": 80000,
-          "max_salary": 130000
-        },
-        {
-          "title": "工業工程師 (IE)",
-          "description": "優化生產流程、佈局與作業標準，提升生產效率。",
-          "min_salary": 60000,
-          "max_salary": 90000
-        },
-        {
-          "title": "軟體測試工程師",
-          "description": "負責開發自動化測試腳本，執行產品軟體功能與效能測試。",
-          "min_salary": 65000,
-          "max_salary": 95000
-        },
-        {
-          "title": "供應鏈管理專員",
-          "description": "負責物料採購、庫存管理與供應商協調，優化供應鏈流程。",
-          "min_salary": 55000,
-          "max_salary": 85000
-        },
-        {
-          "title": "資深機構設計工程師",
-          "description": "負責新產品的機構設計、材料選擇與可靠性驗證。",
-          "min_salary": 105000,
-          "max_salary": 150000
-        },
-        {
-          "title": "自動化設備開發工程師",
-          "description": "設計與開發自動化生產設備，導入機器人與智能製造技術。",
-          "min_salary": 75000,
-          "max_salary": 115000
-        },
-        {
-          "title": "數據分析師 (生產)",
-          "description": "收集與分析生產數據，提供改善建議，支持決策制定。",
-          "min_salary": 70000,
-          "max_salary": 100000
-        }
+        { "title": "SMT 製程工程師", "description": "負責表面貼裝技術 (SMT) 產線的製程參數設定、品質改善與效率提升。", "min_salary": 60000, "max_salary": 90000 },
+        { "title": "產品測試開發工程師", "description": "設計與開發電子產品的功能測試治具、自動化測試程序。", "min_salary": 65000, "max_salary": 100000 },
+        { "title": "工業工程師 (IE)", "description": "進行產線佈局優化、標準工時制定、生產力分析與改善。", "min_salary": 55000, "max_salary": 85000 },
+        { "title": "專案經理 (NPI - 新產品導入)", "description": "負責新產品從設計驗證到成功量產的跨部門協調與時程管理。", "min_salary": 85000, "max_salary": 140000 },
+        { "title": "採購專員 (電子料件)", "description": "負責電子元器件的供應商開發、詢價、議價與訂單管理。", "min_salary": 50000, "max_salary": 75000 },
+        { "title": "資深機構設計工程師 (消費電子)", "description": "主導手機、筆電等消費電子產品的機構件設計與創新。", "min_salary": 100000, "max_salary": 160000 },
+        { "title": "自動化軟體工程師 (LabVIEW/PLC)", "description": "開發自動化測試與控制系統的軟體，整合硬體設備。", "min_salary": 70000, "max_salary": 110000 },
+        { "title": "品質系統工程師 (ISO/IATF)", "description": "維護與推動 ISO 9001、IATF 16949 等品質管理體系。", "min_salary": 60000, "max_salary": 90000 },
+        { "title": "MES 系統工程師", "description": "負責製造執行系統 (MES) 的導入、客製化開發與日常維護。", "min_salary": 75000, "max_salary": 120000 },
+        { "title": "關務管理師", "description": "處理進出口報關、關稅事務及保稅倉庫管理。", "min_salary": 50000, "max_salary": 80000 }
       ]
     },
     {
       "name": "聯發科 (MediaTek)",
-      "description": "全球領先的無晶圓廠半導體公司，專注於行動裝置、家庭娛樂等晶片設計",
+      "description": "全球領先的無晶圓廠半導體公司，提供行動通訊、家庭娛樂等晶片解決方案。",
       "jobs": [
-        {
-          "title": "數位IC設計工程師",
-          "description": "負責晶片數位電路設計 (RTL)、驗證與合成。",
-          "min_salary": 90000,
-          "max_salary": 140000
-        },
-        {
-          "title": "類比IC設計工程師",
-          "description": "負責晶片類比電路、混合信號電路的設計與佈局。",
-          "min_salary": 95000,
-          "max_salary": 150000
-        },
-        {
-          "title": "韌體工程師 (Embedded Linux)",
-          "description": "開發與維護基於 Linux 的嵌入式系統韌體與驅動程式。",
-          "min_salary": 75000,
-          "max_salary": 120000
-        },
-        {
-          "title": "通訊演算法工程師 (5G/Wi-Fi)",
-          "description": "研發與實現 5G、Wi-Fi 等無線通訊標準的物理層/MAC層演算法。",
-          "min_salary": 100000,
-          "max_salary": 160000
-        },
-        {
-          "title": "系統單晶片 (SoC) 架構師",
-          "description": "定義與設計複雜 SoC 的整體架構、IP選擇與效能分析。",
-          "min_salary": 130000,
-          "max_salary": 220000
-        },
-        {
-          "title": "多媒體演算法工程師 (影像/音訊)",
-          "description": "開發影像處理、音訊編解碼等相關演算法並整合至晶片。",
-          "min_salary": 95000,
-          "max_salary": 150000
-        },
-        {
-          "title": "IC驗證工程師",
-          "description": "建立驗證平台，撰寫測試案例，確保晶片功能正確性。",
-          "min_salary": 85000,
-          "max_salary": 130000
-        },
-        {
-          "title": "技術市場工程師 (FAE)",
-          "description": "提供客戶技術支援，解決產品應用問題，收集市場需求。",
-          "min_salary": 80000,
-          "max_salary": 120000
-        }
+        { "title": "數位IC設計工程師 (CPU/GPU)", "description": "參與高性能 CPU/GPU 核心的微架構設計與 RTL 實現。", "min_salary": 100000, "max_salary": 170000 },
+        { "title": "類比IC設計工程師 (電源管理)", "description": "設計高效能電源管理晶片 (PMIC) 中的類比電路。", "min_salary": 105000, "max_salary": 175000 },
+        { "title": "射頻IC設計工程師 (RFIC)", "description": "設計手機、Wi-Fi 等應用中的射頻前端模塊與收發器電路。", "min_salary": 110000, "max_salary": 180000 },
+        { "title": "嵌入式軟體工程師 (BSP/Driver)", "description": "開發板級支援包 (BSP) 及底層驅動程式，驗證硬體功能。", "min_salary": 80000, "max_salary": 130000 },
+        { "title": "通訊協定工程師 (5G NR)", "description": "研發與實現 5G NR 通訊協定棧相關軟體模塊。", "min_salary": 95000, "max_salary": 150000 },
+        { "title": "AI晶片演算法工程師", "description": "將機器學習演算法優化並實現在專用 AI 硬體加速器上。", "min_salary": 120000, "max_salary": 200000 },
+        { "title": "IC佈局工程師 (Layout Engineer)", "description": "根據電路圖進行IC物理佈局，符合設計規則與效能要求。", "min_salary": 70000, "max_salary": 110000 },
+        { "title": "產品工程師 (PE)", "description": "負責晶片從工程樣品到量產的測試開發、良率分析與問題解決。", "min_salary": 85000, "max_salary": 140000 },
+        { "title": "技術文件撰寫工程師", "description": "撰寫晶片規格書、應用筆記、使用者手冊等技術文件。", "min_salary": 60000, "max_salary": 90000 },
+        { "title": "專利工程師", "description": "進行專利檢索、分析與申請，保護公司智慧財產權。", "min_salary": 75000, "max_salary": 120000 }
       ]
     },
     {
       "name": "Google 台灣",
-      "description": "全球領先的科技公司，在台灣設有重要的研發與營運中心",
+      "description": "全球科技巨擘，在台灣設有雲端、硬體、AI等重要研發團隊。",
       "jobs": [
-        {
-          "title": "軟體工程師 (Software Engineer, Backend)",
-          "description": "設計、開發與維護大規模後端系統與服務。",
-          "min_salary": 120000,
-          "max_salary": 250000
-        },
-        {
-          "title": "軟體工程師 (Software Engineer, Frontend)",
-          "description": "使用現代前端框架 (如 Angular, React, Vue) 開發用戶界面。",
-          "min_salary": 110000,
-          "max_salary": 220000
-        },
-        {
-          "title": "機器學習工程師 (Machine Learning Engineer)",
-          "description": "研究、開發與部署機器學習模型於 Google 各項產品。",
-          "min_salary": 130000,
-          "max_salary": 280000
-        },
-        {
-          "title": "產品經理 (Product Manager)",
-          "description": "定義產品願景、策略與路線圖，協調跨部門團隊執行。",
-          "min_salary": 150000,
-          "max_salary": 300000
-        },
-        {
-          "title": "使用者體驗設計師 (UX Designer)",
-          "description": "進行使用者研究，設計直觀易用的產品交互流程與界面。",
-          "min_salary": 90000,
-          "max_salary": 180000
-        },
-        {
-          "title": "網站可靠性工程師 (Site Reliability Engineer, SRE)",
-          "description": "確保 Google 服務的高可用性、效能與可擴展性。",
-          "min_salary": 140000,
-          "max_salary": 270000
-        },
-        {
-          "title": "數據科學家 (Data Scientist)",
-          "description": "分析海量數據，提取洞見，建立預測模型支持業務決策。",
-          "min_salary": 120000,
-          "max_salary": 240000
-        }
+        { "title": "軟體工程師 (分散式系統)", "description": "設計與實現高可用、高擴展性的分散式後端服務與基礎架構。", "min_salary": 140000, "max_salary": 300000 },
+        { "title": "軟體工程師 (Android App)", "description": "參與 Google Pixel 手機或其他 Android 應用的核心功能開發。", "min_salary": 120000, "max_salary": 250000 },
+        { "title": "機器學習研究科學家 (AI)", "description": "探索與發表前沿機器學習理論與演算法，推動技術創新。", "min_salary": 160000, "max_salary": 350000 },
+        { "title": "技術專案經理 (TPM)", "description": "管理複雜軟硬體整合專案的時程、資源與風險，確保專案成功交付。", "min_salary": 150000, "max_salary": 280000 },
+        { "title": "使用者體驗研究員 (UX Researcher)", "description": "規劃並執行使用者研究，將用戶洞察轉化為產品設計建議。", "min_salary": 100000, "max_salary": 200000 },
+        { "title": "硬體工程師 (Pixel 手機)", "description": "參與 Google Pixel 手機等硬體產品的電路設計、系統整合或測試。", "min_salary": 130000, "max_salary": 260000 },
+        { "title": "雲端解決方案架構師 (Google Cloud)", "description": "協助企業客戶導入 Google Cloud Platform (GCP) 解決方案。", "min_salary": 140000, "max_salary": 280000 },
+        { "title": "技術招聘專員 (Technical Recruiter)", "description": "負責招募頂尖軟體工程師與技術人才，建立人才儲備庫。", "min_salary": 80000, "max_salary": 150000 },
+        { "title": "行銷經理 (B2B, Google Cloud)", "description": "制定並執行 Google Cloud 產品在台灣市場的 B2B 行銷策略。", "min_salary": 130000, "max_salary": 250000 },
+        { "title": "合作夥伴發展經理 (Partnerships)", "description": "拓展與維護 Google 各項業務的戰略合作夥伴關係。", "min_salary": 140000, "max_salary": 270000 }
       ]
     },
     {
       "name": "蝦皮購物 (Shopee Taiwan)",
-      "description": "東南亞與台灣領先的電子商務平台",
+      "description": "東南亞與台灣領先的電子商務平台，提供多元商品與便捷購物體驗。",
       "jobs": [
-        {
-          "title": "後端工程師 (Golang/Python/Java)",
-          "description": "開發與維護電商平台核心後端服務，處理高併發請求。",
-          "min_salary": 80000,
-          "max_salary": 150000
-        },
-        {
-          "title": "前端工程師 (Vue.js)",
-          "description": "負責電商網站與 App 的前端界面開發與優化。",
-          "min_salary": 70000,
-          "max_salary": 130000
-        },
-        {
-          "title": "Android/iOS App 開發工程師",
-          "description": "開發與維護蝦皮購物行動應用程式。",
-          "min_salary": 75000,
-          "max_salary": 140000
-        },
-        {
-          "title": "數據工程師 (Data Engineer)",
-          "description": "建立與維護數據管道 (ETL)，處理與儲存海量用戶數據。",
-          "min_salary": 90000,
-          "max_salary": 160000
-        },
-        {
-          "title": "營運專員 (Operations Specialist)",
-          "description": "負責平台日常營運、活動策劃與商家關係維護。",
-          "min_salary": 45000,
-          "max_salary": 70000
-        },
-        {
-          "title": "數位行銷專員",
-          "description": "策劃與執行數位廣告投放、社群媒體行銷與內容行銷。",
-          "min_salary": 50000,
-          "max_salary": 80000
-        },
-        {
-          "title": "DevOps 工程師",
-          "description": "負責 CI/CD 流程建置、自動化維運與雲端資源管理。",
-          "min_salary": 85000,
-          "max_salary": 150000
-        }
+        { "title": "後端工程師 (Microservices, Java/Spring Boot)", "description": "設計與開發高併發、高可用的電商微服務架構。", "min_salary": 90000, "max_salary": 170000 },
+        { "title": "前端工程師 (React/Vue, PWA)", "description": "負責購物網站與商家後台的前端開發，優化使用者體驗與效能。", "min_salary": 75000, "max_salary": 140000 },
+        { "title": "行動應用開發工程師 (React Native/Flutter)", "description": "使用跨平台技術開發與迭代蝦皮購物 App。", "min_salary": 80000, "max_salary": 150000 },
+        { "title": "數據分析師 (用戶行為)", "description": "分析用戶購物行為數據，提供個性化推薦、行銷活動優化建議。", "min_salary": 70000, "max_salary": 130000 },
+        { "title": "產品經理 (電商平台功能)", "description": "負責規劃與設計電商平台新功能，如直播購物、遊戲互動等。", "min_salary": 85000, "max_salary": 160000 },
+        { "title": "UI 設計師 (電商)", "description": "設計美觀且易用的電商 App 與網頁界面，提升轉換率。", "min_salary": 65000, "max_salary": 110000 },
+        { "title": "測試自動化工程師 (Appium/Selenium)", "description": "建立與維護行動端與網頁端的自動化測試框架與腳本。", "min_salary": 70000, "max_salary": 120000 },
+        { "title": "品類經理 (Category Manager)", "description": "負責特定商品品類的招商、選品、定價與促銷策略。", "min_salary": 60000, "max_salary": 100000 },
+        { "title": "倉儲物流專員", "description": "管理倉庫運營、庫存盤點、訂單揀貨與出貨流程。", "min_salary": 40000, "max_salary": 60000 },
+        { "title": "客服主管", "description": "帶領客服團隊，處理客訴，提升服務品質與效率。", "min_salary": 55000, "max_salary": 85000 }
+      ]
+    },
+    // --- 新增公司 ---
+    {
+      "name": "中華電信",
+      "description": "台灣最大的綜合電信服務提供商",
+      "jobs": [
+        { "title": "網路工程師 (核心網路)", "description": "負責核心網路的規劃、建置、維運與優化。", "min_salary": 70000, "max_salary": 120000 },
+        { "title": "資訊系統開發工程師 (Java/.NET)", "description": "開發與維護公司內部營運支撐系統 (OSS/BSS)。", "min_salary": 65000, "max_salary": 100000 },
+        { "title": "數據庫管理員 (DBA)", "description": "負責公司資料庫的安裝、配置、備份、效能調校與安全管理。", "min_salary": 75000, "max_salary": 130000 },
+        { "title": "行動通信工程師 (5G/LTE)", "description": "參與5G/LTE網路規劃、基地台建設與網路品質優化。", "min_salary": 70000, "max_salary": 110000 },
+        { "title": "雲端服務工程師 (IDC/Hicloud)", "description": "負責中華電信雲端平台與IDC機房的維運與技術支援。", "min_salary": 60000, "max_salary": 95000 }
+      ]
+    },
+    {
+      "name": "PChome 線上購物",
+      "description": "台灣知名的B2C電子商務平台",
+      "jobs": [
+        { "title": "PHP 後端工程師", "description": "開發與維護 PChome 購物網站後端系統與 API。", "min_salary": 60000, "max_salary": 100000 },
+        { "title": "網站前端工程師 (JavaScript/jQuery)", "description": "負責購物網站前端頁面製作、互動效果與效能優化。", "min_salary": 55000, "max_salary": 90000 },
+        { "title": "SEO 專員", "description": "執行網站搜尋引擎優化策略，提升自然搜尋排名與流量。", "min_salary": 45000, "max_salary": 70000 },
+        { "title": "倉儲管理人員", "description": "負責商品入庫、出庫、盤點與倉儲空間規劃。", "min_salary": 35000, "max_salary": 50000 },
+        { "title": "客服專員 (電話/線上)", "description": "透過電話或線上系統解答顧客疑問，處理訂單與售後問題。", "min_salary": 32000, "max_salary": 45000 }
+      ]
+    },
+    {
+      "name": "台達電子 (Delta Electronics)",
+      "description": "全球電源管理與散熱解決方案的領導廠商",
+      "jobs": [
+        { "title": "電源研發工程師 (R&D)", "description": "設計與開發交換式電源供應器、不斷電系統等電源產品。", "min_salary": 75000, "max_salary": 130000 },
+        { "title": "硬體工程師 (電力電子)", "description": "負責電源產品的硬體電路設計、零件選用與測試驗證。", "min_salary": 70000, "max_salary": 120000 },
+        { "title": "熱傳工程師", "description": "進行電子產品的散熱分析、模擬與散熱方案設計。", "min_salary": 65000, "max_salary": 100000 },
+        { "title": "嵌入式系統工程師 (充電樁/儲能)", "description": "開發電動車充電樁、儲能系統的控制韌體與應用軟體。", "min_salary": 80000, "max_salary": 140000 },
+        { "title": "業務工程師 (工業自動化)", "description": "推廣與銷售台達工業自動化產品 (如PLC, 變頻器, 機器人)。", "min_salary": 60000, "max_salary": 95000 }
+      ]
+    },
+    {
+      "name": "趨勢科技 (Trend Micro)",
+      "description": "全球知名的資訊安全軟體與解決方案公司",
+      "jobs": [
+        { "title": "資安威脅研究員", "description": "分析惡意軟體、網路攻擊手法，研究新型態資安威脅與防禦技術。", "min_salary": 90000, "max_salary": 160000 },
+        { "title": "C++ 軟體開發工程師 (核心引擎)", "description": "開發與維護防毒軟體、端點防護產品的核心掃描引擎與偵測技術。", "min_salary": 80000, "max_salary": 140000 },
+        { "title": "雲端安全架構師 (Cloud Security)", "description": "設計與建構基於雲端平台的安全解決方案與服務。", "min_salary": 100000, "max_salary": 180000 },
+        { "title": "滲透測試工程師 (Ethical Hacker)", "description": "模擬駭客攻擊手法，對系統與應用進行安全性評估與滲透測試。", "min_salary": 85000, "max_salary": 150000 },
+        { "title": "技術支援工程師 (企業客戶)", "description": "為企業客戶提供資訊安全產品的技術支援、問題排除與顧問服務。", "min_salary": 60000, "max_salary": 90000 }
+      ]
+    },
+    {
+      "name": "ASUS (華碩電腦)",
+      "description": "全球知名的電腦硬體與消費電子產品製造商",
+      "jobs": [
+        { "title": "筆記型電腦硬體研發工程師", "description": "負責筆記型電腦主機板設計、系統整合與效能調校。", "min_salary": 70000, "max_salary": 120000 },
+        { "title": "BIOS 工程師", "description": "開發與維護電腦系統的 BIOS/UEFI 韌體。", "min_salary": 75000, "max_salary": 130000 },
+        { "title": "工業設計師 (ID)", "description": "負責電腦、手機等產品的外觀造型設計與使用者體驗。", "min_salary": 60000, "max_salary": 100000 },
+        { "title": "電競產品行銷企劃", "description": "策劃 ROG 等電競品牌的產品定位、行銷活動與社群經營。", "min_salary": 55000, "max_salary": 90000 },
+        { "title": "軟體品質保證工程師 (SQA)", "description": "制定測試計畫，執行軟體功能測試、相容性測試與使用者體驗測試。", "min_salary": 65000, "max_salary": 100000 }
       ]
     }
   ]
