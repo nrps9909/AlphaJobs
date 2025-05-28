@@ -1,5 +1,7 @@
 # Alphajobs - 阿發甲 | 工作查詢網
 
+## [網站本人!!!](https://alphajobs-0fa68111ce13.herokuapp.com/)
+
 **AlphaJobs** 是一個現代化的求職平台，旨在提供流暢的職缺搜尋體驗以及富有洞察力的公司薪資統計數據。該平台採用前後端分離架構，後端使用 Ruby on Rails 構建強大的 API，前端則使用 Angular 打造互動式使用者介面。
 
 ## ✨ 主要功能
