@@ -1,0 +1,31 @@
+{
+  "name": "Job Portal",
+  "description": "A modern job search and company statistics platform",
+  "repository": "https://github.com/yourusername/job-portal",
+  "keywords": ["ruby", "rails", "angular", "mongodb", "job-search"],
+  "addons": [],
+  "env": {
+    "MONGODB_URI": {
+      "description": "MongoDB connection string",
+      "required": true
+    },
+    "RAILS_MASTER_KEY": {
+      "description": "Rails master key for credentials",
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

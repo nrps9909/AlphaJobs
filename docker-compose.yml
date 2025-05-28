@@ -1,0 +1,26 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      - RAILS_ENV=development
+      - SECRET_KEY_BASE=development_secret_key_that_is_very_long_and_secure_123456789
+      - MONGODB_URI=mongodb+srv://nrps9909:Ab921218@alphaloan.8hg5896.mongodb.net/job_portal?retryWrites=true&w=majority&appName=alphaloan
+    volumes:
+      - ./backend:/app
+      - ./data:/app/data
+      - backend_bundle:/usr/local/bundle
+    stdin_open: true
+    tty: true
+    command: bash -c "rm -f tmp/pids/server.pid && bundle install && rails server -b 0.0.0.0"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_bundle:

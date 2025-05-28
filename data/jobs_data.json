@@ -1,0 +1,106 @@
+{
+  "companies": [
+    {
+      "name": "台積電",
+      "description": "全球領先的半導體製造公司",
+      "jobs": [
+        {
+          "title": "製程工程師",
+          "description": "負責半導體製程開發與優化",
+          "min_salary": 80000,
+          "max_salary": 120000
+        },
+        {
+          "title": "技術員",
+          "description": "協助製程設備維護與操作",
+          "min_salary": 30000,
+          "max_salary": 36000
+        },
+        {
+          "title": "資深研發工程師",
+          "description": "先進製程技術研發",
+          "min_salary": 120000,
+          "max_salary": 180000
+        },
+        {
+          "title": "品質工程師",
+          "description": "產品品質控管與改善",
+          "min_salary": 70000,
+          "max_salary": 100000
+        },
+        {
+          "title": "AI演算法工程師",
+          "description": "開發製程優化AI模型",
+          "min_salary": 110000,
+          "max_salary": 160000
+        }
+      ]
+    },
+    {
+      "name": "鴻海",
+      "description": "全球最大的電子代工服務公司",
+      "jobs": [
+        {
+          "title": "工廠技術員",
+          "description": "產線設備操作與維護",
+          "min_salary": 28000,
+          "max_salary": 35000
+        },
+        {
+          "title": "專案經理",
+          "description": "管理客戶專案執行",
+          "min_salary": 80000,
+          "max_salary": 120000
+        },
+        {
+          "title": "軟體工程師",
+          "description": "開發自動化系統",
+          "min_salary": 65000,
+          "max_salary": 95000
+        },
+        {
+          "title": "供應鏈管理師",
+          "description": "優化供應鏈流程",
+          "min_salary": 55000,
+          "max_salary": 80000
+        },
+        {
+          "title": "資深機構工程師",
+          "description": "產品機構設計與開發",
+          "min_salary": 105000,
+          "max_salary": 140000
+        }
+      ]
+    },
+    {
+      "name": "聯發科",
+      "description": "全球IC設計領導廠商",
+      "jobs": [
+        {
+          "title": "IC設計工程師",
+          "description": "晶片電路設計與驗證",
+          "min_salary": 90000,
+          "max_salary": 130000
+        },
+        {
+          "title": "韌體工程師",
+          "description": "開發嵌入式系統韌體",
+          "min_salary": 75000,
+          "max_salary": 110000
+        },
+        {
+          "title": "演算法工程師",
+          "description": "通訊演算法開發",
+          "min_salary": 100000,
+          "max_salary": 150000
+        },
+        {
+          "title": "系統架構師",
+          "description": "晶片系統架構設計",
+          "min_salary": 130000,
+          "max_salary": 200000
+        }
+      ]
+    }
+  ]
+}

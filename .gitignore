@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+vendor/bundle/
+
+# Production
+dist/
+build/
+tmp/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+.config
+coverage/
+spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
+
+# Rails
+log/
+tmp/
+db/*.sqlite3
+db/*.sqlite3-journal
+public/system
+public/uploads
+public/assets
+.byebug_history
+
+# Angular
+.angular/
+*.sh

@@ -1,0 +1,15 @@
+development:
+  clients:
+    default:
+      database: job_portal_development
+      hosts:
+        - localhost:27017
+      options:
+        server_selection_timeout: 5
+
+production:
+  clients:
+    default:
+      uri: <%= ENV['MONGODB_URI'] %>
+      options:
+        server_selection_timeout: 5

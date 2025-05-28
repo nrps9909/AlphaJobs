@@ -1,0 +1,15 @@
+default: &default
+  adapter: mongodb
+  database: job_portal
+
+development:
+  <<: *default
+  database: job_portal_development
+
+test:
+  <<: *default
+  database: job_portal_test
+
+production:
+  <<: *default
+  database: job_portal_production
