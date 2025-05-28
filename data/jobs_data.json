@@ -8,7 +8,7 @@
         { "title": "設備工程師", "description": "維護、保養及改善先進製程設備，確保設備穩定運作。", "min_salary": 75000, "max_salary": 115000 },
         { "title": "製程整合工程師", "description": "協調不同製程模塊，解決整合問題，提升產品整體表現。", "min_salary": 85000, "max_salary": 130000 },
         { "title": "技術員 (生產線)", "description": "協助工程師執行設備操作、參數調整與日常點檢。", "min_salary": 32000, "max_salary": 45000 },
-        { "title": "資深研發工程師 (材料科學)", "description": "研究新型半導體材料特性，導入先進製程應用。", "min_salary": 120000, "max_salary": 190000 },
+        { "title": "資深研發工程師 (材料科學)", "description": "研究新型半導體材料特性，導入先進製程 Anwendung。", "min_salary": 120000, "max_salary": 190000 },
         { "title": "品質保證工程師 (QA)", "description": "建立品質管理系統，執行產品可靠性測試與異常分析。", "min_salary": 70000, "max_salary": 105000 },
         { "title": "AI演算法工程師 (智能製造)", "description": "開發機器學習模型，應用於缺陷檢測、預測性維護等智能製造場景。", "min_salary": 110000, "max_salary": 170000 },
         { "title": "廠務工程師 (水氣化)", "description": "負責廠區超純水、特殊氣體、化學品供應系統的運維管理。", "min_salary": 65000, "max_salary": 100000 },
@@ -80,7 +80,6 @@
         { "title": "客服主管", "description": "帶領客服團隊，處理客訴，提升服務品質與效率。", "min_salary": 55000, "max_salary": 85000 }
       ]
     },
-
     {
       "name": "中華電信",
       "description": "台灣最大的綜合電信服務提供商",
@@ -134,6 +133,18 @@
         { "title": "工業設計師 (ID)", "description": "負責電腦、手機等產品的外觀造型設計與使用者體驗。", "min_salary": 60000, "max_salary": 100000 },
         { "title": "電競產品行銷企劃", "description": "策劃 ROG 等電競品牌的產品定位、行銷活動與社群經營。", "min_salary": 55000, "max_salary": 90000 },
         { "title": "軟體品質保證工程師 (SQA)", "description": "制定測試計畫，執行軟體功能測試、相容性測試與使用者體驗測試。", "min_salary": 65000, "max_salary": 100000 }
+      ]
+    },
+    {
+      "name": "陳廷安的人生有限公司 (Ting-An's Life Ltd.)",
+      "description": "專注於提升陳廷安幸福指數的獨家運營機構，具備高度不可預測性與驚喜。",
+      "jobs": [
+        {
+          "title": "陳廷安的唯一指定女友 (終身職，不可跳槽)",
+          "description": "全方位負責陳廷安的日常情緒支持、歡樂製造、美食共享、爛笑話捧場及未來藍圖共同規劃。需具備高度抗壓性（對付他的偶爾幼稚與中二發言）、無限的愛、以及在他打電動時自動切換為啦啦隊/補給員模式的超能力。",
+          "min_salary": 5201314,
+          "max_salary": 94209420
+        }
       ]
     }
   ]

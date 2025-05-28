@@ -12,7 +12,7 @@ import { CompanyStats } from './models/company.model';
   imports: [CommonModule, FormsModule],
   template: `
     <div class="container">
-      <h1>職缺查詢與公司統計系統</h1>
+      <h1>阿發甲 | 工作查詢網</h1>
 
       <div class="glass-card">
         <div class="tab-container">

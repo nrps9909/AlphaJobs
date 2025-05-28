@@ -41,7 +41,7 @@
 1. **複製本倉庫**：
 
    ```bash
-   git clone https://github.com/nrps9909/job-portal.git
+   git clone https://github.com/nrps9909/AlphaJobs.git
    cd job-portal
    ```
 
