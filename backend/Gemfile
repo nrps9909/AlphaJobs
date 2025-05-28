@@ -1,3 +1,4 @@
+# backend/Gemfile
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -7,6 +8,7 @@ gem 'rails', '~> 7.0.0'
 gem 'mongoid', '~> 8.0'
 gem 'puma', '~> 5.0'
 gem 'rack-cors'
+gem 'rack-timeout' # <--- 這是您需要新增的行
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

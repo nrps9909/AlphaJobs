@@ -1,0 +1,15 @@
+{
+  "name": "job-portal-monorepo-root",
+  "version": "1.0.0",
+  "description": "Root package.json to trigger Heroku Node.js buildpack for monorepo.",
+  "scripts": {
+    "heroku-prebuild": "echo 'Root heroku-prebuild: Installing frontend dependencies...' && (cd frontend && npm install --include=dev) && echo 'Root heroku-prebuild: Finished frontend dependencies.'",
+    "heroku-postbuild": "echo 'Root heroku-postbuild: Running frontend asset deployment script...' && (cd frontend && npm run deploy-assets) && echo 'Root heroku-postbuild: Finished frontend asset deployment.'",
+    "build": "echo 'Root build script - this will be run by Node.js buildpack if no heroku-postbuild' && (cd frontend && npm run build)"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": ">=8.x"
+  },
+  "private": true
+}

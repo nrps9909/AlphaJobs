@@ -1,22 +1,18 @@
-
 services:
   backend:
-    build: ./backend
+    build: 
+      context: .  # 改為根目錄
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
     env_file:
-      - .env # 從 .env 文件加載環境變量
+      - .env
     environment:
       RAILS_ENV: development
-      # MONGODB_URI 會從 .env 文件中構建或直接讀取
-      # 如果你在 .env 中定義了 MONGODB_URI_DEV，則使用：
-      # MONGODB_URI: ${MONGODB_URI_DEV}
-      # 否則，如果分段定義，則拼接：
       MONGODB_URI: mongodb+srv://${MONGODB_USER}:${MONGODB_PASSWORD}@${MONGODB_CLUSTER_HOST}/${MONGODB_DATABASE}?retryWrites=true&w=majority&appName=${MONGODB_APP_NAME}
-      # SECRET_KEY_BASE 可以從 .env 文件讀取
       SECRET_KEY_BASE: ${DEV_SECRET_KEY_BASE}
     volumes:
-      - ./backend:/app:cached # :cached 可能提高 macOS/Windows 上的性能
+      - ./backend:/app:cached
       - ./data:/app/data
       - backend_bundle:/usr/local/bundle
     stdin_open: true
@@ -32,4 +28,4 @@ services:
 
 volumes:
   backend_bundle:
-    driver: local # 明確指定 driver (可選)
+    driver: local

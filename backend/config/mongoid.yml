@@ -1,14 +1,15 @@
+# backend/config/mongoid.yml
+
 development:
   clients:
     default:
-      # 使用環境變數中的 MONGODB_URI
       uri: <%= ENV['MONGODB_URI'] %>
       options:
-        # 若您的 Atlas URI 指向通用集群，且您希望在開發時使用特定資料庫名稱
-        # (例如 job_portal_development_atlas)，可以取消註解並修改以下行。
-        # 但您目前的 Atlas URI 已包含 'job_portal'。
-        # database: job_portal_development
         server_selection_timeout: 5
+        connect_timeout: 10
+        socket_timeout: 5
+        max_pool_size: 5
+        min_pool_size: 1
 
 test:
   clients:
@@ -17,7 +18,7 @@ test:
       hosts:
         - localhost:27017
       options:
-        server_selection_timeout: 1 # 測試時使用較短的超時
+        server_selection_timeout: 1
 
 production:
   clients:
@@ -25,3 +26,16 @@ production:
       uri: <%= ENV['MONGODB_URI'] %>
       options:
         server_selection_timeout: 5
+        connect_timeout: 10
+        socket_timeout: 5
+        # 生產環境使用較大的連線池
+        max_pool_size: 10
+        min_pool_size: 2
+        # 重試寫入操作
+        retry_writes: true
+        # 讀取偏好設定
+        read:
+          mode: :primary
+        # 確保使用正確的認證機制
+        auth_mech: :scram
+        auth_source: 'job_portal' # <--- 核心修改：明確指定 auth_source

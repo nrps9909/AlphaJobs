@@ -13,7 +13,8 @@ class Job
   validates :min_salary, :max_salary, presence: true, numericality: { greater_than: 0 }
   validate :salary_range_valid
 
-  index({ title: 'text' })
+  # 簡化索引設定，避免在部署時出錯
+  index({ title: 1 })
   index({ company_id: 1 })
 
   private
