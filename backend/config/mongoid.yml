@@ -1,11 +1,23 @@
 development:
   clients:
     default:
-      database: job_portal_development
+      # 使用環境變數中的 MONGODB_URI
+      uri: <%= ENV['MONGODB_URI'] %>
+      options:
+        # 若您的 Atlas URI 指向通用集群，且您希望在開發時使用特定資料庫名稱
+        # (例如 job_portal_development_atlas)，可以取消註解並修改以下行。
+        # 但您目前的 Atlas URI 已包含 'job_portal'。
+        # database: job_portal_development
+        server_selection_timeout: 5
+
+test:
+  clients:
+    default:
+      database: job_portal_test
       hosts:
         - localhost:27017
       options:
-        server_selection_timeout: 5
+        server_selection_timeout: 1 # 測試時使用較短的超時
 
 production:
   clients:

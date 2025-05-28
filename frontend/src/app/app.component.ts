@@ -13,28 +13,28 @@ import { CompanyStats } from './models/company.model';
   template: `
     <div class="container">
       <h1>職缺查詢與公司統計系統</h1>
-      
+
       <div class="glass-card">
         <div class="tab-container">
-          <button 
-            class="tab-button" 
+          <button
+            class="tab-button"
             [class.active]="activeTab === 'jobs'"
-            (click)="activeTab = 'jobs'">
+            (click)="setActiveTab('jobs')">
             職缺列表
           </button>
-          <button 
-            class="tab-button" 
+          <button
+            class="tab-button"
             [class.active]="activeTab === 'stats'"
-            (click)="activeTab = 'stats'">
+            (click)="setActiveTab('stats')">
             公司統計
           </button>
         </div>
 
         <div *ngIf="activeTab === 'jobs'">
           <div class="search-box">
-            <input 
-              type="text" 
-              class="search-input" 
+            <input
+              type="text"
+              class="search-input"
               placeholder="搜尋職缺名稱..."
               [(ngModel)]="searchKeyword"
               (keyup.enter)="searchJobs()">
@@ -42,7 +42,7 @@ import { CompanyStats } from './models/company.model';
           </div>
 
           <div *ngIf="loading" class="loading">載入中...</div>
-          
+
           <div *ngIf="!loading && jobs.length === 0" class="no-results">
             沒有找到相關職缺
           </div>
@@ -63,8 +63,12 @@ import { CompanyStats } from './models/company.model';
 
         <div *ngIf="activeTab === 'stats'">
           <div *ngIf="loadingStats" class="loading">載入統計資料中...</div>
-          
-          <div *ngIf="!loadingStats" class="stats-grid">
+
+          <div *ngIf="!loadingStats && (!companyStats || companyStats.length === 0)" class="no-results">
+            目前沒有公司統計資料。
+          </div>
+
+          <div *ngIf="!loadingStats && companyStats && companyStats.length > 0" class="stats-grid">
             <div class="stat-card" *ngFor="let stat of companyStats">
               <div class="stat-company">{{ stat.name }}</div>
               <div class="stat-value">NT$ {{ stat.average_salary | number }}</div>
@@ -79,7 +83,7 @@ import { CompanyStats } from './models/company.model';
       </div>
     </div>
   `,
-  styles: []
+  styles: [] // <--- 修正點：確保這是一個有效的空數組
 })
 export class AppComponent implements OnInit {
   activeTab: 'jobs' | 'stats' = 'jobs';
@@ -95,52 +99,67 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    console.log('AppComponent OnInit: Initializing component and loading data.');
     this.loadJobs();
     this.loadCompanyStats();
   }
 
+  setActiveTab(tabName: 'jobs' | 'stats') {
+    console.log(`setActiveTab: Changing tab to "${tabName}". Current companyStats count: ${this.companyStats?.length}`);
+    this.activeTab = tabName;
+  }
+
   loadJobs() {
+    console.log('loadJobs: Attempting to load jobs.');
     this.loading = true;
     this.jobService.getJobs().subscribe({
       next: (jobs) => {
+        console.log('loadJobs: Successfully received jobs data.', jobs);
         this.jobs = jobs;
         this.loading = false;
       },
       error: (error) => {
-        console.error('Error loading jobs:', error);
+        console.error('loadJobs: Error loading jobs.', error);
         this.loading = false;
       }
     });
   }
 
   loadCompanyStats() {
+    console.log('loadCompanyStats: Attempting to load company statistics.');
     this.loadingStats = true;
     this.companyService.getStatistics().subscribe({
       next: (stats) => {
+        console.log('loadCompanyStats: Successfully received company statistics data.', stats);
         this.companyStats = stats;
+        console.log('loadCompanyStats: this.companyStats after assignment.', this.companyStats);
         this.loadingStats = false;
       },
       error: (error) => {
-        console.error('Error loading statistics:', error);
+        console.error('loadCompanyStats: Error loading company statistics.', error);
+        this.companyStats = [];
         this.loadingStats = false;
       }
     });
   }
 
   searchJobs() {
+    console.log(`searchJobs: Attempting to search jobs with keyword "${this.searchKeyword}".`);
     if (this.searchKeyword.trim()) {
       this.loading = true;
       this.jobService.searchJobs(this.searchKeyword).subscribe({
         next: (jobs) => {
+          console.log('searchJobs: Successfully received search results.', jobs);
           this.jobs = jobs;
           this.loading = false;
         },
         error: (error) => {
-          console.error('Error searching jobs:', error);
+          console.error('searchJobs: Error searching jobs.', error);
           this.loading = false;
         }
       });
     } else {
+      console.log('searchJobs: Keyword is empty, loading all jobs instead.');
       this.loadJobs();
     }
   }
